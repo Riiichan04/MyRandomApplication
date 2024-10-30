@@ -26,6 +26,8 @@ yarn-error.log*
 .idea/*
 client/.env
 server/config/.env
-client/SCHEDULE.js
-client/ScheduleOther.jsx
+client/node_modules
+server/node_modules
 data/cache/
+client/src/const/SCHEDULE.js
+client/src/page/element/logged_home/ScheduleOther.jsx
