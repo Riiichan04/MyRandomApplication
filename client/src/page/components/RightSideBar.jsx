@@ -21,9 +21,12 @@ function ToDoListActivity({listAction}) {
             await preloadData(null, "/api/loadTodolist", [["id", localStorage.getItem('id')]])
                 .then(data => {
                     // return < ToDoListCard key={ele.todolistId} title={ele.title} content={ele.content} id={ele.todolistId} />
-                    let formatTopTodolist = {title: "Không có việc cần làm", content: "Hooray!! Bạn thật là năng suất!!!"}
+                    let formatTopTodolist = {
+                        title: "Không có việc cần làm",
+                        content: "Hooray!! Bạn thật là năng suất!!!"
+                    }
                     if (data.listTodolist.length > 0) {
-                         formatTopTodolist = {
+                        formatTopTodolist = {
                             title: data.listTodolist[0].title,
                             content: data.listTodolist[0].content,
                         }
@@ -68,30 +71,16 @@ function ToDoListActivity({listAction}) {
 }
 
 function ScheduleActivity({
-                              listAction, currentSchedule = {
-        0: {1: null, 2: null, 3: null, 4: null},
-        1: {1: null, 2: null, 3: null, 4: null},
-        2: {
-            1: null,
-            2: null,
-            3: null,
-            4: null
-        },
-        3: {
-            1: null,
-            2: null,
-            3: null,
-            4: null
-        },
-        4: {
-            1: null,
-            2: null,
-            3: null,
-            4: null
-        },
-        5: {1: null, 2: null, 3: null, 4: null},
-        6: {1: null, 2: null, 3: null, 4: null}
-    }
+                              listAction,
+                              currentSchedule = {
+                                  0: {1: null, 2: null, 3: null, 4: null},
+                                  1: {1: null, 2: null, 3: null, 4: null},
+                                  2: {1: null, 2: null, 3: null, 4: null},
+                                  3: {1: null, 2: null, 3: null, 4: null},
+                                  4: {1: null, 2: null, 3: null, 4: null},
+                                  5: {1: null, 2: null, 3: null, 4: null},
+                                  6: {1: null, 2: null, 3: null, 4: null}
+                              }
                           }) {
     const timeOfDay = Object.freeze({
         1: "Ca 1",

@@ -28,6 +28,5 @@ client/.env
 server/config/.env
 client/node_modules
 server/node_modules
-data/cache/
-client/src/const/SCHEDULE.js
-client/src/page/element/logged_home/ScheduleOther.jsx
+server/data/cache/
+client/src/const/schedule.json
