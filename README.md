@@ -82,13 +82,13 @@ Rất xinloi vì hiện tại chỉ mới tạm hoàn chỉnh được 3/7 tính
 
 ## Công nghệ đã sử dụng:
 
-<div>
+<div style="background-color: #f5f5f5; padding: 2%">
 <img style="margin: auto 3%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" height="50" alt="React">
 <img style="margin: auto 3%" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" height="50" alt="NodeJS">
 <img style="margin: auto 3%" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" height="50" alt="ExpressJS">
 </div>
 
-<div>
+<div style="background-color: #f5f5f5; padding: 2%">
 <img style="margin: auto 3%" src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" height="50" alt="SQL Server">
 <img style="margin: auto 3%" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/MongoDB_Fores-Green.svg/1920px-MongoDB_Fores-Green.svg.png" height="50" alt="MongoDB">
 <img style="margin: auto 3%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Cloudinary_logo.svg/1920px-Cloudinary_logo.svg.png" height="50" alt="Cloudinary">
