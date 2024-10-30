@@ -21,7 +21,8 @@ thấy chưa giải quyết được cái gì trong thực tế cho lắm =))~~
 
 ## Cài đặt
 
-Đơn giản là clone về và chạy thôi. Nhưng mà cũng cần phải setup biến môi trường để chạy được:
+1. Clone repo này
+2. Config biến môi trường bằng cách tạo 2 file với nội dung như sau:
 
 ```
 client/.env
@@ -43,6 +44,9 @@ server/config/.env
 
 ~~Xinloi vì phải bắt config đống này~~
 
+3. Mở `server/config/CustomDB.sql` và execute file này.
+
+4. Sau khi xong các bước config ở trên thì bắt đầu host client và server như sau:
 ### Host server locally:
 
 1. Mở một cmd mới và gõ `cd server` để chuyển thư mục làm việc hiện tại vào server
