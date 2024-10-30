@@ -4,7 +4,6 @@ Chỉ là một ứng dụng với những tính năng vô cùng ngẫu nhiên �
 
 ## Mục lục
 
-* [Mục lục](#mục-lục)
 * [Giới thiệu](#giới-thiệu)
 * [Cài đặt](#cài-đặt)
 * [Tính năng:](#tính-năng)
