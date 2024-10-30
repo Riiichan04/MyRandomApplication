@@ -1,0 +1,40 @@
+#shopping-container {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    column-gap: 5%;
+    row-gap: 5%;
+}
+
+.shopping-card {
+    /*width: 20%;*/
+}
+
+.shopping-card__image {
+    display: flex;
+    justify-content: center;
+}
+
+.shopping-card__image>img {
+    width: 80%;
+}
+
+.shopping-card__info>h2 {
+    /*font-weight: bold;*/
+}
+
+.shopping-card__info>* {
+    text-align: center;
+    /*white-space: pre-line;*/
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.shopping-card__price>* {
+    text-align: end;
+}
+
+.shopping-card__footer>* {
+    text-align: end;
+    font-size: 12px;
+}

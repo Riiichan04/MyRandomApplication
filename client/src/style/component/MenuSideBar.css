@@ -1,0 +1,22 @@
+#left-aside {
+    position: fixed;
+    width: 5%;
+    height: 100%;
+    background-color: var(--side-background-color);
+}
+
+#logo {
+    margin-top: 5%;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+#logo>a {
+    border-radius: 50%;
+    padding: 5%;
+}
+
+#logo>a:hover {
+    background-color: var(--side-background-color-hover);
+}

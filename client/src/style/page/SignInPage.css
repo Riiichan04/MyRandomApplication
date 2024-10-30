@@ -1,0 +1,39 @@
+#form__main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgb(29, 34, 43);
+    padding: 2% 2% 0 2%;
+    border-radius: 5%;
+    width: 25rem;
+}
+
+.form {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.form>div {
+    margin: 2% 0;
+}
+
+.subcta__btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: rgb(68, 147, 248);
+}
+
+#signin__btn,
+#signup__btn {
+    border: none;
+    border-radius: 1rem;
+    padding: 2% 5%;
+}
+
+.transition__height {
+    transition: all 1s ease-in-out;
+}
