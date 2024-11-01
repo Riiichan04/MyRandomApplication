@@ -1,0 +1,150 @@
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes waveX {
+    0%, 100% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-20px);
+    }
+}
+
+#background {
+    background-color: #00072d;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.bg-element {
+    position: absolute;
+}
+
+#bg-element__top-left {
+    top: -10%;
+    left: -5%;
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(42, 185, 246, 0.4);
+    border-radius: 50px;
+    transform: rotate(40deg);
+}
+
+#bg-element__center {
+    top: 60%;
+    left: 20%;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(0, 128, 128, 0.6);
+    border-radius: 50%;
+    animation: waveX 4s linear infinite;
+}
+
+#bg-element__center-left {
+    top: 25%;
+    left: 15%;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 40px;
+    background-color: rgba(100, 149, 237, 0.5);
+    animation: spin 2s linear infinite;
+}
+
+#bg-element__right {
+    top: -20%;
+    right: -10%;
+    width: 50rem;
+    height: 60rem;
+    border-radius: 200px;
+    transform: rotate(60deg);
+    background-color: rgba(0, 149, 204, 0.4);
+}
+
+#bg-element__bottom-left {
+    bottom: 25%;
+    left: -3%;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+    background-color: rgba(97, 252, 186, 0.5);
+    animation: wave 5s linear infinite;
+}
+
+.container {
+    max-width: 1536px;
+    padding-right: 13rem;
+    padding-left: 13rem;
+    position: relative;
+}
+
+.main-title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 2em;
+}
+
+.sub-title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.description, .description * {
+    font-size: 1.25rem !important;
+    font-weight: lighter;
+    margin-top: 5%;
+}
+
+.sub-description {
+    font-size: 1rem !important;
+    font-weight: lighter;
+    margin-top: 2%;
+}
+
+#intro {
+    margin-top: 20%;
+}
+
+.left-content {
+    position: absolute;
+    width: 45%;
+}
+
+#intro-image {
+    position: absolute;
+    right: -25%;
+    width: 55vw;
+}
+
+#tech-skill-list {
+    padding: 1%;
+    background-color: var(--foreground-color);
+    border-radius: 20px;
+}
