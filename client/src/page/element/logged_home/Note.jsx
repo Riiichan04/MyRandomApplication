@@ -25,6 +25,9 @@ export default function NoteComponent() {
                         setListIdNote(prev => [...prev, parseInt(note.id)])
                         return <MessageComponent content={note.content} time={note.upload_time} key={note.id} id={note.id}/>
                     })
+                    if (listComponent.length === 0) {
+                        listComponent.push(<h2 style={{alignContent: 'center', textAlign: 'center'}}>Ở đây không có gì, hãy viết thêm ghi chú nhé</h2>)
+                    }
                     setTimeout(() => {
                         setListNote(listComponent)
                     }, 350)
