@@ -3,6 +3,36 @@
     to { transform: rotate(360deg); }
 }
 
+@keyframes wave {
+    0%, 100% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes waveX {
+    0%, 100% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    75% {
+        transform: translateX(-20px);
+    }
+}
+
 #background {
     background-color: #00072d;
     position: fixed;
@@ -34,6 +64,7 @@
     height: 10rem;
     background-color: rgba(0, 128, 128, 0.6);
     border-radius: 50%;
+    animation: waveX 4s linear infinite;
 }
 
 #bg-element__center-left {
@@ -54,6 +85,16 @@
     border-radius: 200px;
     transform: rotate(60deg);
     background-color: rgba(0, 149, 204, 0.4);
+}
+
+#bg-element__bottom-left {
+    bottom: 25%;
+    left: -3%;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+    background-color: rgba(97, 252, 186, 0.5);
+    animation: wave 5s linear infinite;
 }
 
 .container {
@@ -100,4 +141,10 @@
     position: absolute;
     right: -25%;
     width: 55vw;
+}
+
+#tech-skill-list {
+    padding: 1%;
+    background-color: var(--foreground-color);
+    border-radius: 20px;
 }
