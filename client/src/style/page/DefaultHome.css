@@ -64,7 +64,6 @@
     height: 10rem;
     background-color: rgba(0, 128, 128, 0.6);
     border-radius: 50%;
-    animation: waveX 4s linear infinite;
 }
 
 #bg-element__center-left {
@@ -139,9 +138,34 @@
 
 #intro-image {
     position: absolute;
-    right: -25%;
+    right: -23%;
     width: 55vw;
 }
+
+#intro-group {
+    width: 45%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#intro-group button {
+    width: 13rem;
+    padding: 2% 3%;
+    font-size: medium;
+    border-radius: 15px;
+    background-color: #35759d;
+}
+
+#intro-group a {
+    text-decoration: none;
+    color: var(--foreground-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #tech-skill-list {
     padding: 1%;

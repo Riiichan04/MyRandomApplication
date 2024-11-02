@@ -1,12 +1,9 @@
 import React from "react";
 import '../style/page/DefaultHome.css'
 import {Card, CardContent, CardHeader, Typography} from "@mui/material";
-
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default class DefaultHome extends React.Component {
-    // constructor(prop) {
-    //     super(prop)
-    // }
 
     render() {
         return (
@@ -50,6 +47,22 @@ function IntroSection() {
 
                 <img id="intro-image" src={process.env.REACT_APP_CLOUDINARY + "/landing_page/landing_intro.webp"}
                      alt=""/>
+
+                <div id="intro-group" >
+                    <button >
+                        <a href="https://github.com/Riiichan04/MyRandomApplication">
+                            <GitHubIcon sx={{marginRight: '5%'}}/>
+                            Source Code
+                        </a>
+                    </button>
+
+                    <button >
+                        <a href="/login">
+                            Đăng nhập
+                        </a>
+                    </button>
+                </div>
+
             </section>
         </div>
     )
