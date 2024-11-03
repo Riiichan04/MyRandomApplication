@@ -50,7 +50,7 @@ class UserHome extends React.Component {
                     {this.state.functionIndex === FUNCTION_INDEX.SCHEDULE && <ScheduleComponent/>}
                     {this.state.functionIndex === FUNCTION_INDEX.PODCAST && <PodcastComponent/>}
                     {this.state.functionIndex === FUNCTION_INDEX.TODOLIST && <ToDoListComponent/>}
-                    {this.state.functionIndex === FUNCTION_INDEX.RECOMMEND_SHOPPING && <RecommendShoppingComponent/>}
+                    {/*{this.state.functionIndex === FUNCTION_INDEX.RECOMMEND_SHOPPING && <RecommendShoppingComponent/>}*/}
                 </div>
                 <RightSideBar listFeatureOptionalFunction={this.switchFunction}/>
             </>

@@ -83,14 +83,14 @@ export default function LeftSideBar({ overrideSwitchFunction, startIndex, getCur
                     <SpaceDashboardRoundedIcon sx={{fontSize: fontSize}}/>
                     <span>Trang chủ</span>
                 </div>
-                <div className='feature-button' onClick={() => switchFunction(FUNCTION_INDEX.RECOMMEND_SHOPPING)}
-                     style={{
-                         backgroundColor: currentIndexFunction() === FUNCTION_INDEX.RECOMMEND_SHOPPING ? "var(--side-background-color-hover)" : "",
-                         color: currentIndexFunction() === FUNCTION_INDEX.RECOMMEND_SHOPPING ? "var(--foreground-color)" : "var(--foreground-unfocus-color)"
-                     }}>
-                    <ShoppingBagRoundedIcon sx={{fontSize: fontSize}}/>
-                    <span>Review mua sắm</span>
-                </div>
+                {/*<div className='feature-button' onClick={() => switchFunction(FUNCTION_INDEX.RECOMMEND_SHOPPING)}*/}
+                {/*     style={{*/}
+                {/*         backgroundColor: currentIndexFunction() === FUNCTION_INDEX.RECOMMEND_SHOPPING ? "var(--side-background-color-hover)" : "",*/}
+                {/*         color: currentIndexFunction() === FUNCTION_INDEX.RECOMMEND_SHOPPING ? "var(--foreground-color)" : "var(--foreground-unfocus-color)"*/}
+                {/*     }}>*/}
+                {/*    <ShoppingBagRoundedIcon sx={{fontSize: fontSize}}/>*/}
+                {/*    <span>Review mua sắm</span>*/}
+                {/*</div>*/}
             </div>
         )
     }
