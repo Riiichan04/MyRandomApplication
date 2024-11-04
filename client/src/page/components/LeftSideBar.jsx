@@ -5,12 +5,13 @@ import CalendarMonthRoundedIcon from '@mui/icons-material/CalendarMonthRounded';
 import PodcastsRoundedIcon from '@mui/icons-material/PodcastsRounded';
 import PlaylistAddCheckRoundedIcon from '@mui/icons-material/PlaylistAddCheckRounded';
 import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import ExitToAppRoundedIcon from '@mui/icons-material/ExitToAppRounded';
+import React, {useState} from "react";
+import {useNavigate} from "react-router-dom";
 import FUNCTION_INDEX from '../../const/FUNCTION_INDEX';
 import '../../style/component/MenuSideBar.css'
 
-export default function LeftSideBar({ overrideSwitchFunction, startIndex, getCurrentIndexFunction }) {
+export default function LeftSideBar({overrideSwitchFunction, startIndex, getCurrentIndexFunction}) {
 
     const [functionIndex, setFunctionIndex] = useState(startIndex)
     const navigate = useNavigate()
@@ -18,16 +19,16 @@ export default function LeftSideBar({ overrideSwitchFunction, startIndex, getCur
     const defaultSwitchFunction = (index) => {
         if (index > -1 && index < Object.keys(FUNCTION_INDEX).length && index !== functionIndex) {
             setFunctionIndex(index)
-            navigate("/", { state: { passedFunctionIndex: index } })
+            navigate("/", {state: {passedFunctionIndex: index}})
         }
     }
-    
+
     const defaultCurrentIndex = () => functionIndex
 
     const switchFunction = overrideSwitchFunction || defaultSwitchFunction
     const currentIndexFunction = getCurrentIndexFunction || defaultCurrentIndex
 
-    const FeatureMenu = ({ fontSize }) => {
+    const FeatureMenu = ({fontSize}) => {
         return (
             <div id="feature__menu">
                 <div id="logo">
@@ -91,6 +92,17 @@ export default function LeftSideBar({ overrideSwitchFunction, startIndex, getCur
                 {/*    <ShoppingBagRoundedIcon sx={{fontSize: fontSize}}/>*/}
                 {/*    <span>Review mua sắm</span>*/}
                 {/*</div>*/}
+                <div className='feature-button' style={{
+                    color: "var(--foreground-unfocus-color)"
+                }}
+                     onClick={() => {
+                         localStorage.clear()
+                         navigate("/")
+                     }}
+                >
+                    <ExitToAppRoundedIcon sx={{fontSize: fontSize}}/>
+                    <span>Đăng xuất</span>
+                </div>
             </div>
         )
     }
