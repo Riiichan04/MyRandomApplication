@@ -93,12 +93,16 @@ export default function LeftSideBar({overrideSwitchFunction, startIndex, getCurr
                 {/*    <span>Review mua sắm</span>*/}
                 {/*</div>*/}
                 <div className='feature-button' style={{
-                    color: "var(--foreground-unfocus-color)"
+                    color: "var(--foreground-unfocus-color)",
+                    position: "absolute",
+                    bottom: "0"
+
                 }}
                      onClick={() => {
                          localStorage.clear()
                          navigate("/")
                      }}
+
                 >
                     <ExitToAppRoundedIcon sx={{fontSize: fontSize}}/>
                     <span>Đăng xuất</span>
