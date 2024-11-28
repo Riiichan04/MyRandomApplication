@@ -98,3 +98,11 @@ Rất xinloi vì hiện tại chỉ mới tạm hoàn chỉnh được 3/7 tính
 </div>
 
 **License:** Sử dụng [License MIT](LICENSE.txt).
+
+## Hình ảnh của web
+![image](https://cdn.discordapp.com/attachments/1142165184677425204/1311720110372814858/image.png?ex=6749e20c&is=6748908c&hm=7a538f871a4bcbe15a81ecbf04fd8a76c8dcadee8cb1562e6ce0b44f89b2dec0&)
+![image](https://cdn.discordapp.com/attachments/1142165184677425204/1311720184821579776/image.png?ex=6749e21e&is=6748909e&hm=a1134bdccd74c281a019ce9bc2d4a375a80691387e79344709ccf8c73e7b61ac&)
+![image](https://cdn.discordapp.com/attachments/1142165184677425204/1311720227175661598/image.png?ex=6749e228&is=674890a8&hm=f2d5affcaf4a939b8949e07994e9f1afb81d1fb4618ac4ba6fd0b299a726c5f3&)
+![image](https://cdn.discordapp.com/attachments/1142165184677425204/1311721099704143893/image.png?ex=6749e2f8&is=67489178&hm=644a4e1602a7b5c8ad59f21b08301fc0be9030d0e80120c3c00c1a82df796be7&)
+![image](https://cdn.discordapp.com/attachments/1142165184677425204/1311722414123778129/image.png?ex=6749e432&is=674892b2&hm=fc60ea81cf4450a06020e774d6da1cdb0c7d6bcc6d896ec03d2e8ce320091baf&)
+![image](https://cdn.discordapp.com/attachments/1142165184677425204/1311722529118752800/image.png?ex=6749e44d&is=674892cd&hm=5e89ef0935d4202276915e3dd250cacf043ac8a4fb53c24a430026e63144e425&)
